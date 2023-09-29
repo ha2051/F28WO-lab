@@ -163,7 +163,7 @@ main h3 {
     padding: 10px 20px;
     background-color: #282689;
     color: #ffffff;
-    text-decoration:double;
+    text-decoration:underline;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 15px;
