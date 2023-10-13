@@ -35,28 +35,32 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="tasks.html">Tasks</a></li>
     </ul>
+
+    <a class="prev" onzclick="plusSlides(-1)"> prev </a>
+    <a class="next" onzclick="plusSlides(1)"> next </a>
     </nav>
   
   <main class="services">
       <h1>Gallery</h1>
 
 		<div class="gallery-container">
-			<img src="images/1.jpeg" alt="Spa Image 1">
-			<img src="images/2.jpeg" alt="Spa Image 2">
-			<img src="images/3.jpeg" alt="Spa Image 3">
-			<img src="images/4.jpeg" alt="Spa Image 4">
-			<img src="images/5.jpeg" alt="Spa Image 5">
-			<img src="images/6.jpeg" alt="Spa Image 6">
-			<img src="images/7.jpeg" alt="Spa Image 7">
-			<img src="images/8.jpeg" alt="Spa Image 7">
-      <img src="images/1.jpg" alt="Spa Image 1">
+			<div class="mySlides"> 
+      </div class="numbertext"> 1 / 8</div>
+        <img src="images/1.jpg" alt="Spa Image 1">
+      </div class="numbertext"> 2 / 8</div>
       <img src="images/2.jpg" alt="Spa Image 2">
-			<img src="images/3.jpg" alt="Spa Image 3">
-			<img src="images/4.jpg" alt="Spa Image 4">
-			<img src="images/5.jpg" alt="Spa Image 5">
-			<img src="images/6.jpg" alt="Spa Image 6">
-			<img src="images/7.jpg" alt="Spa Image 7">
-			<img src="images/8.jpg" alt="Spa Image 7">
+    </div class="numbertext"> 3 / 8</div>
+    <img src="images/3.jpg" alt="Spa Image 3">
+  </div class="numbertext"> 4 / 8</div>
+	<img src="images/4.jpg" alt="Spa Image 4">
+</div class="numbertext"> 5 / 8</div>
+<img src="images/5.jpg" alt="Spa Image 5">
+</div class="numbertext"> 6 / 8</div>
+<img src="images/6.jpg" alt="Spa Image 6">
+</div class="numbertext"> 7/ 8</div>
+<img src="images/7.jpg" alt="Spa Image 7">
+</div class="numbertext"> 8 / 8</div>
+<img src="images/8.jpg" alt="Spa Image 8">
 		</div>
    <!-- Call to Action -->
    <section class="cta-container">
@@ -75,5 +79,19 @@
     <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
  </div>
+
+ <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n){
+
+  }
+ </script>
+
 </body>
 </html>

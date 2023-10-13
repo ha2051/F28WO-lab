@@ -213,3 +213,14 @@ background-color:midnightblue;
 border-radius: 4px;
 padding : 4px;
 }
+
+.mySlides{
+    display : none;
+}
+* {
+    box-sizing: border-box;
+    }
+    .slideshow-img {
+    vertical-align: middle;
+    width: 100%;
+    }
