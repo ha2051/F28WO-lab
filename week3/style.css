@@ -224,3 +224,12 @@ padding : 4px;
     vertical-align: middle;
     width: 100%;
     }
+    .container{
+        position:relative;
+    }
+    .mySlides{
+        display: none;
+    }
+    .cursor{
+        cursor: pointer;
+    }
