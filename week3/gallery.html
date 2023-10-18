@@ -36,8 +36,8 @@
         <li><a href="tasks.html">Tasks</a></li>
     </ul>
 
-    <a class="prev" onzclick="plusSlides(-1)"> prev </a>
-    <a class="next" onzclick="plusSlides(1)"> next </a>
+    <a class="prev" onclick="plusSlides(-1)"> prev</a>
+    <a class="next" onclick="plusSlides(1)"> next </a>
     </nav>
   
   <main class="services">
@@ -101,8 +101,36 @@
     showSlides(slideIndex += n);
   }
 
-  function showSlides(n){
+  function currentSlide(n){
+    showSlides(slideIndex = n);
 
+  }
+  
+  function showSlides(n){
+    let i;
+    // hala write comments dont forget.
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementsByClassName("caption");
+
+    //comments
+    if (n > slides.length){slideIndex = 1}
+     //comments
+     
+     if (n < 1) {slideIndex = slide.length}
+     //comments
+     for (i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";
+     }
+     //comments
+     for (i = 0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace("active", "");
+     }
+     //comments
+     slides[slideIndex-1].style.display= "block";
+     dots[slideIndex-1].className += "active";
+     //comments
+     captionText.innerHTML = dots[slideIndex-1].alt;
   }
  </script>
 

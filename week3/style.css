@@ -224,6 +224,7 @@ padding : 4px;
     vertical-align: middle;
     width: 100%;
     }
+    
     .container{
         position:relative;
     }
@@ -264,4 +265,5 @@ padding : 4px;
         position:absolute;
         top: 0;
     }
+    
     
