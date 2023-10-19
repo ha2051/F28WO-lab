@@ -5,134 +5,117 @@
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
   <style>
-   .gallery-container {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 40px;
-  }
+    .gallery-container {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
 
-   .gallery-container img {
-	width: 24%;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+    .gallery-container img {
+      width: 24%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <style>
+    /* Add CSS styles for the slideshow */
+    .slideshow-container {
+      display: block;
+      position: relative;
+    }
+
+    .slideshow-img {
+      display: none;
+      max-width: 100%;
+    }
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <div>
+<div>
   <header>
     <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
-	</header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html" class = "highlight">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tasks.html">Tasks</a></li>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html" class="highlight">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
     </ul>
 
-    <a class="prev" onclick="plusSlides(-1)"> prev</a>
-    <a class="next" onclick="plusSlides(1)"> next </a>
-    </nav>
-  
+    <a class="prev" onclick="plusSlides(-1)">prev</a>
+    <a class="next" onclick="plusSlides(1)">next</a>
+  </nav>
+
   <main class="services">
-      <h1>Gallery</h1>
+    <h1>Gallery</h1>
 
-		<div class="gallery-container">
-			<div class="mySlides"> 
-        </div class="numbertext"> 1 / 8</div>
-        <img src="images/Untitled design/1.jpg" alt="Spa Image 1" class = "slideshow-img">
+    <div class="gallery-container">
+      <div class="slideshow-container">
+        <img class="slideshow-img" src="images/Untitled design/1.jpg" alt="Spa Image 1">
+        <img class="slideshow-img" src="images/Untitled design/2.jpg" alt="Spa Image 2">
+        <img class="slideshow-img" src="images/Untitled design/3.jpg" alt="Spa Image 3">
+        <img class="slideshow-img" src="images/Untitled design/4.jpg" alt ="Spa Image 4">
+        <img class="slideshow-img" src="images/Untitled design/5.jpg" alt ="Spa Image 5">
+        <img class="slideshow-img" src="images/Untitled design/6.jpg" alt ="Spa Image 6">
+        <img class="slideshow-img" src="images/Untitled design/7.jpg" alt ="Spa Image 7">
+        <img class="slideshow-img" src="images/Untitled design/8.jpg" alt ="Spa Image 8">
+        <!-- Add more images here -->
       </div>
+    </div>
 
-      <div class="mySlides"> 
-        </div class="numbertext"> 2 / 8</div>
-        <img src="images/Untitled design/2.jpg" alt="Spa Image 2" class = "slideshow-img">
-      </div>
-
-      <div class="mySlides"> 
-        </div class="numbertext"> 3 / 8</div>
-        <img src="images/Untitled design/3.jpg" alt="Spa Image 3" class = "slideshow-img">
-      </div>
-      
-      <div class="mySlides"> 
-  </div class="numbertext"> 4 / 8</div>
-	<img src="images/Untitled design/4.jpg" alt="Spa Image 4" class = "slideshow-img">
-  <div class="mySlides"> 
-</div class="numbertext"> 5 / 8</div>
-<img src="images/Untitled design/5.jpg" alt="Spa Image 5" class = "slideshow-img">
-<div class="mySlides"> 
-</div class="numbertext"> 6 / 8</div>
-<img src="images/Untitled design/6.jpg" alt="Spa Image 6" class = "slideshow-img">
-<div class="mySlides"> 
-</div class="numbertext"> 7/ 8</div>
-<img src="images/Untitled design/7.jpg" alt="Spa Image 7" class = "slideshow-img">
-<div class="mySlides"> 
-</div class="numbertext"> 8 / 8</div>
-<img src="images/Untitled design/8.jpg" alt="Spa Image 8" class = "slideshow-img">
-		</div>
-   <!-- Call to Action -->
-   <section class="cta-container">
-    <h2>Ready to Experience Our Services?</h2>
-    <p>Join us today and discover the difference we can make for you!</p>
-    <a href="contact.html" class="cta-button">Contact Us Now</a>
-  </section>
-
+    <!-- Call to Action -->
+    <section class="cta-container">
+      <h2>Ready to Experience Our Services?</h2>
+      <p>Join us today and discover the difference we can make for you!</p>
+      <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </section>
   </main>
   <footer>
-      <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li ><a href="https://www.instagram.com/">Instagram</a></li>
-      </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <ul>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+    </ul>
+    <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
- </div>
+</div>
 
- <script>
+<script>
   let slideIndex = 1;
   showSlides(slideIndex);
 
   function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides((slideIndex += n));
   }
 
-  function currentSlide(n){
-    showSlides(slideIndex = n);
-
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
   }
-  
-  function showSlides(n){
+
+  function showSlides(n) {
     let i;
-    // hala write comments dont forget.
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
-    let captionText = document.getElementsByClassName("caption");
+    let slides = document.getElementsByClassName("slideshow-img");
 
-    //comments
-    if (n > slides.length){slideIndex = 1}
-     //comments
-     
-     if (n < 1) {slideIndex = slide.length}
-     //comments
-     for (i = 0; i < slides.length; i++){
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-     }
-     //comments
-     for (i = 0; i < dots.length; i++){
-      dots[i].className = dots[i].className.replace("active", "");
-     }
-     //comments
-     slides[slideIndex-1].style.display= "block";
-     dots[slideIndex-1].className += "active";
-     //comments
-     captionText.innerHTML = dots[slideIndex-1].alt;
-  }
- </script>
+    }
 
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
 </body>
 </html>

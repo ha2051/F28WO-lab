@@ -222,10 +222,12 @@ padding : 4px;
     }
     .slideshow-img {
     vertical-align: middle;
-    width: 100%;
+    
     }
     
     .container{
+        width: 100%;
+        height: 100%;
         position:relative;
     }
     .mySlides{
@@ -234,12 +236,13 @@ padding : 4px;
     .cursor{
         cursor: pointer;
     }
+
     .prev,
     .next{
         cursor: pointer;
         position:absolute;
-        top: 40%;
-        width:auto;
+        top: 100%;
+        width: 100px;
         padding:16px;
         margin-top: -50px;
         color: white;
