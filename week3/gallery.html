@@ -48,25 +48,59 @@
       <li><a href="tasks.html">Tasks</a></li>
     </ul>
 
-    <a class="prev" onclick="plusSlides(-1)">prev</a>
-    <a class="next" onclick="plusSlides(1)">next</a>
+    
   </nav>
 
   <main class="services">
     <h1>Gallery</h1>
 
-    <div class="gallery-container">
-      <div class="slideshow-container">
-        <img class="slideshow-img" src="images/Untitled design/1.jpg" alt="Spa Image 1">
-        <img class="slideshow-img" src="images/Untitled design/2.jpg" alt="Spa Image 2">
-        <img class="slideshow-img" src="images/Untitled design/3.jpg" alt="Spa Image 3">
-        <img class="slideshow-img" src="images/Untitled design/4.jpg" alt ="Spa Image 4">
-        <img class="slideshow-img" src="images/Untitled design/5.jpg" alt ="Spa Image 5">
-        <img class="slideshow-img" src="images/Untitled design/6.jpg" alt ="Spa Image 6">
-        <img class="slideshow-img" src="images/Untitled design/7.jpg" alt ="Spa Image 7">
-        <img class="slideshow-img" src="images/Untitled design/8.jpg" alt ="Spa Image 8">
-        <!-- Add more images here -->
+   
+    <div class="slideshow-container">
+      
+        <div class="mySlides"> 
+        <div class="numbertext"> 1 / 8</div>
+        <img src="images/Untitled design/1.jpg" alt="Spa Image 1">
+        
       </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 2 / 8</div>
+        <img src="images/Untitled design/2.jpg" alt="Spa Image 2">
+        
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 3 / 8</div>
+        <img src="images/Untitled design/3.jpg" alt="Spa Image 3">
+        
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 4 / 8</div>
+        <img src="images/Untitled design/4.jpg" alt ="Spa Image 4">
+       
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 5 / 8</div>
+        <img src="images/Untitled design/5.jpg" alt ="Spa Image 5">
+        
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 6/ 8</div>
+        <img src="images/Untitled design/6.jpg" alt ="Spa Image 6">
+        
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 7 / 8</div>
+        <img src="images/Untitled design/7.jpg" alt ="Spa Image 7">
+        
+      </div>
+        <div class="mySlides"> 
+        <div class="numbertext"> 8 / 8</div>
+        <img src="images/Untitled design/8.jpg" alt ="Spa Image 8">
+        
+        <!-- Add more images here --> 
+        
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">prev</a>
+      <a class="next" onclick="plusSlides(1)">next</a>
     </div>
 
     <!-- Call to Action -->
@@ -100,13 +134,13 @@
 
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slideshow-img");
+    let slides = document.getElementsByClassName("mySlides");
 
-    if (n > slides.length) {
+    if (slideIndex > slides.length) {
       slideIndex = 1;
     }
 
-    if (n < 1) {
+    if (slideIndex < 1) {
       slideIndex = slides.length;
     }
 
