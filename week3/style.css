@@ -41,7 +41,7 @@ nav {
 
 nav ul {
     background-color: #333;
-    color: #fff;
+    color: #a42c2c;
     text-align: center;
     list-style-type: none;
     margin: 0;
@@ -214,22 +214,70 @@ border-radius: 4px;
 padding : 4px;
 }
 
-.mySlides{
-    display : none;
-}
+
 * {
     box-sizing: border-box;
     }
-    .slideshow-img {
-    vertical-align: middle;
-    width: 100%;
+    .slideshow-container{
+        max-width: 800px;
+        position:relative;
     }
+   
+    
     .container{
+       max-width: 800px;
         position:relative;
     }
     .mySlides{
         display: none;
     }
+<<<<<<< HEAD
     .cursor{
         cursor: pointer;
     }
+=======
+    .mySlides img{
+        width: 100%;
+        height:auto;
+    }
+    .cursor{
+        cursor:pointer;
+    }
+
+
+    .prev,
+    .next{
+        cursor: pointer;
+        position:absolute;
+        top: 60%;
+        
+        padding:16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select:none;
+        
+    }
+    .next{
+        right: 0;
+        left: initial;
+        border-radius: 3px 0 0 3px;
+    }
+   
+    .prev:hover,
+    .next:hover{
+        background-color: rgba (0, 0, 0, 0.8);
+    }
+    .numbertext{
+        color:#f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position:absolute;
+        top: 0;
+    }
+    
+    
+>>>>>>> fc5c6cf0a3f08b446ce7798b620a3b1c8ac328ee
