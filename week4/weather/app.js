@@ -1,9 +1,14 @@
-const apiKey = '2e0bb3b26408a54823e7ddf16932990f'; // Wrap the API key in quotes
+
+const apiKey = '2e0bb3b26408a54823e7ddf16932990f';
+
+
 const inputField = document.getElementById('cityInput');
-const searchButton = document.getElementById('searchButton');
-const weatherInfoDiv = document.getElementById('weatherInfo');
+const searchButton = document.getElementById('btn'); 
+const weatherInfoDiv = document.getElementById('weather-info'); 
+
 
 searchButton.addEventListener('click', () => {
+  
   const cityName = inputField.value.trim();
 
   if (cityName === '') {
@@ -11,33 +16,38 @@ searchButton.addEventListener('click', () => {
     return;
   }
 
+  
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
+  const request = new XMLHttpRequest();
+
+  request.open('GET', apiUrl, true);
+
+  request.onload = function () {
+    
+    if (request.status >= 200 && request.status < 300) {
+      const data = JSON.parse(request.responseText);
+      
       const weatherDescription = data.weather[0].description;
       const mainTemperature = data.main.temp;
       const windSpeed = data.wind.speed;
 
       weatherInfoDiv.innerHTML = `
+      <p>City Name: ${cityName}</p>
         <p>Weather: ${weatherDescription}</p>
         <p>Main Temperature: ${mainTemperature} K</p>
         <p>Wind Speed: ${windSpeed} m/s</p>
       `;
-    })
-    .catch(error => {
-      if (error.name === 'AbortError') {
-        alert('Request aborted');
-      } else if (error.name === 'TypeError') {
-        alert('Network error. Please check your internet connection');
-      } else {
-        alert('An error occurred. Please try again later');
-      }
-    });
+    } else {
+      
+      alert(`HTTP error! Status: ${request.status}`);
+    }
+  };
+
+  request.onerror = function () {
+    
+    alert('Network error. Please check your internet connection');
+  };
+
+  request.send();
 });
