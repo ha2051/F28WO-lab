@@ -1,5 +1,4 @@
-
-https://api.openweathermap.org/data/2.5/weather?q=${city}&appid= 2e0bb3b26408a54823e7ddf16932990f
+const apiKey = '2e0bb3b26408a54823e7ddf16932990f'; // Wrap the API key in quotes
 const inputField = document.getElementById('cityInput');
 const searchButton = document.getElementById('searchButton');
 const weatherInfoDiv = document.getElementById('weatherInfo');
